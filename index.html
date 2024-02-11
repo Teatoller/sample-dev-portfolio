@@ -5,39 +5,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Steven Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-column {
+            width: 80%;
+            background-color: black;
+            color: whitesmoke;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-column {
+            width: 20%;
+            background-color: yellowgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .project-card {
+            background-color: #333;
+            color: whitesmoke;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-right: 1rem;
+            flex: 1;
+            min-width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: whitesmoke;
+            padding: 0.5rem;
+        }
+    </style>
 </head>
 
 <body>
     <main>
-        <div style="display: flex">
-            <div style="width: 66%; background-color: black">
-                <h1 style="color: yellowgreen; margin-left: 0.5rem">Steven Ennis</h1>
-                <h2 style="color: yellowgreen; padding-left: 0.5rem">Frontend Techie
-                </h2>
-                <section style="color: whitesmoke; padding-left: 0.5rem">
-                    <h3 style="color: yellowgreen;"><u>Background</u></h3>
-                    <p><b>Education:</b><em> Degree</em></p>
-                    <p><b>Skills:</b> <em> HTML-5, CSS-3</em></p>
-                    <p><b>Job Experience:</b><em> Mid-Level</em></p>
-                    <p><b>Hobbies:</b><em> Swimming,Cycling</em></p>
-                    <p><b>Interests:</b><em> Xyz</em></p>
-                </section>
-                <section style="color: whitesmoke; padding-left: 0.5rem">
-                    <h3 style="color: yellowgreen;"><u>Projects</u></h3>
-                    <ul>
-                        <li>abc</li>
-                        <li>1,2 3</li>
-                        <li>list....</li>
-                    </ul>
-                </section>
-            </div>
-            <div style="width: 30%; background-color: yellowgreen">
-                <div style="margin-top: 45%; margin-left: -80px">
-                    <img width="150px" height="150px" src="./images/steven_Ennis.jpg" alt="profile picture" />
+        <div class="left-column">
+            <h1>Steven Ennis</h1>
+            <h2>Frontend Techie</h2>
+            <section>
+                <h3><u>Background</u></h3>
+                <p><b>Education:</b> Degree</p>
+                <p><b>Skills:</b> HTML-5, CSS-3</p>
+                <p><b>Job Experience:</b> Mid-Level</p>
+                <p><b>Hobbies:</b> Swimming, Cycling</p>
+                <p><b>Interests:</b> Xyz</p>
+            </section>
+            <section>
+                <h3><u>Projects</u></h3>
+                <div style="display: flex;">
+                    <div class="project-card">Project 1</div>
+                    <div class="project-card">Project 2</div>
+                    <div class="project-card">Project 3</div>
                 </div>
-            </div>
+            </section>
+        </div>
+        <div class="right-column">
+            <img class="profile-picture" src="./images/steven_Ennis.jpg" alt="profile picture" />
         </div>
     </main>
+    <footer>
+        <p>© Copyright 2024 by Ennis. All rights reversed.</p>
+    </footer>
 </body>
 
 </html>
