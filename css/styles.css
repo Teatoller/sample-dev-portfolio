@@ -10,7 +10,7 @@ h1, h2 {
 
 main {
     display: flex;
-    height: 120vh;
+    height: 125vh;
 }
 
 .left-column {
