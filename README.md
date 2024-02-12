@@ -18,4 +18,4 @@
 
 
 # Copyright and License information
-Copyright © 2024, Steven Ennis. Released under the MIT License
+Copyright © 2024, Steven Ennis. Released under the [MIT License](LICENSE)
