@@ -17,4 +17,5 @@
 [Ennis Dev-portfolio](https://teatoller.github.io/sample-dev-portfolio/index.html)
 
 
-# copyright and license information
+# Copyright and License information
+Copyright © 2024, Steven Ennis. Released under the MIT License
